@@ -12,7 +12,7 @@ import (
 
 const URL = "http://api.openweathermap.org/data/2.5/weather?id=6453405&appid=2f134dd341ed0970e1bdf7bec5eac617"
 
-type Coords struct{
+type Coordinates struct{
 	Lon float64
 	Lat float64
 }
