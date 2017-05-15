@@ -15,10 +15,12 @@
 </div>
 <div style="margin-left:10px">
 <h1>Nåværende status:</h1>
-<p>Weather at {{.Coord.Lat}}, {{.Coord.Lon}}</p>
-<p>Temperature: {{.Main.Temp}}&#8451;</p>
-<p>Humidity : {{.Main.Humidity}}%</p>
+<p>Koordinater: {{.Coord.Lat}}, {{.Coord.Lon}}</p>
+<p>Temperatur: {{.Main.Temp}}&#8451;</p>
+<p>Luftfuktighet : {{.Main.Humidity}}%</p>
 </div>
-<img src="https://maptiles.finncdn.no/staticmap?lat=58.143703&lng=7.9967947&zoom=12&size=400x300&maptype=norwayVector&showPin=false" style="width:20%">
+<div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Kristiansand, Norge,
+  &t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </iframe>
 </body>
 </html>
