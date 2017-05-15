@@ -10,10 +10,8 @@ import (
 	"path"
 )
 
-//URL for å hente ut værdata for Kristiansand
 const URL = "http://api.openweathermap.org/data/2.5/weather?id=6453405&appid=2f134dd341ed0970e1bdf7bec5eac617"
 
-//Struct for å strukturere JSON data senere, slik at vi enkelt kan hente det ut igjen
 type Coords struct{
 	Lon float64
 	Lat float64
