@@ -10,11 +10,12 @@
 <div class="w3-display-container" style="margin-bottom:10px">
     <div class="w3-container w3-cyan w3-hide-small"
          style="bottom:10%;opacity:0.7;width:50%">
-        <h1>Værmelding for <b>Kristiansand</b>, {{.Sys.Country}}</h1>
+        <h1>Værmelding for <b>{{.Name}}</b>, {{.Sys.Country}}</h1>
     </div>
 </div>
 <div style="margin-left:10px">
 <h1>Nåværende status:</h1>
+<p>Været er: {{.Weather.Description}}</p>
 <p>Temperatur: {{.Main.Temp}}&#8451;</p>
 <p>Vindhastighet: {{.Wind.Speed}}m/s</p>
 <p>Luftfuktighet : {{.Main.Humidity}}%</p>
@@ -26,5 +27,3 @@
   </iframe>
 </body>
 </html>
-
-

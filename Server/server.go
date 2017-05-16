@@ -27,11 +27,18 @@ type Sys1 struct {
 type Wind1 struct {
 	Speed float64
 }
+
+type Weather1 struct {
+	Description []string
+	Icon        []string
+}
 type Weather struct {
-	Coord Coords
-	Main  Measurements
-	Sys   Sys1
-	Wind  Wind1
+	Coord   Coords
+	Main    Measurements
+	Sys     Sys1
+	Wind    Wind1
+	Weather Weather1
+	Name    string
 }
 
 func main() {
