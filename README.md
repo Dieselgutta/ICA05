@@ -1,2 +1,4 @@
-# ICA05
-dieselgruppa is-105
+# ICA01
+
+
+*Deltakere: Simen Fredriksen, Stian Blankenberg, Jone Manneråk, Kristian Hagberg, Tarjei Taxerås og Rasmus Sørby*
