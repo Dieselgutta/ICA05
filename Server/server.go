@@ -20,8 +20,6 @@ type Measurements struct {
 	Temp float64
 	Pressure float64
 	Humidity float64
-	Temp_min float64
-	Temp_max float64
 }
 type Weather struct {
 	Coord Coordinates
@@ -57,8 +55,6 @@ func decode(data []byte) *Weather {
 	}
 
 	dat.Main.Temp = dat.Main.Temp - 273.15
-	dat.Main.Temp_max = dat.Main.Temp_max - 273.15
-	dat.Main.Temp_min = dat.Main.Temp_min - 273.15
 	return dat
 }
 
