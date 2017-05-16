@@ -12,18 +12,33 @@ import (
 
 const URL = "http://api.openweathermap.org/data/2.5/weather?id=6453405&appid=2f134dd341ed0970e1bdf7bec5eac617"
 
-type Coordinates struct{
+type Coordinates struct {
 	Lon float64
 	Lat float64
 }
 type Measurements struct {
-	Temp float64
+	Temp     float64
 	Pressure float64
 	Humidity float64
+	Temp_min float64
+	Temp_max float64
+}
+type Sys1 struct {
+	Id      float64
+	Message float64
+	Country string
+	Sunrise float64
+	Sunset  float64
+}
+type Vind struct {
+	Speed float64
+	Deg   float64
 }
 type Weather struct {
 	Coord Coordinates
-	Main Measurements
+	Main  Measurements
+	Sys   Sys1
+	Wind  Vind
 }
 
 func main() {
