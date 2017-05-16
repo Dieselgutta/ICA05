@@ -50,7 +50,7 @@ func main() {
 func basicHandler(w http.ResponseWriter, r *http.Request) {
 	json := getData()
 	profile := Weather(*json)
-	fp := path.Join("templates", "index.html")
+	fp := path.Join("Templates", "index.html")
 	tmpl, err := template.ParseFiles(fp)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
