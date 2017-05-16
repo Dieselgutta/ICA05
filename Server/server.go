@@ -20,19 +20,12 @@ type Measurements struct {
 	Temp     float64
 	Pressure float64
 	Humidity float64
-	Temp_min float64
-	Temp_max float64
 }
 type Sys1 struct {
-	Id      float64
-	Message float64
 	Country string
-	Sunrise float64
-	Sunset  float64
 }
 type Vind struct {
 	Speed float64
-	Deg   float64
 }
 type Weather struct {
 	Coord Coordinates
