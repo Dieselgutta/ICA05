@@ -29,8 +29,8 @@ type Wind1 struct {
 }
 
 type Weather1 struct {
-	Description []string
-	Icon        []string
+	Description string
+	Icon        string
 }
 type Weather struct {
 	Coord   Coords
