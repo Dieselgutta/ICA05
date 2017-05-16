@@ -9,20 +9,20 @@
 <body>
 <div class="w3-display-container" style="margin-bottom:10px">
     <div class="w3-container w3-cyan w3-hide-small"
-         style="bottom:10%;opacity:0.7;width:70%">
-        <h1>Værmelding for <b>Kristiansand</b></h1>
+         style="bottom:10%;opacity:0.7;width:50%">
+        <h1>Værmelding for <b>Kristiansand</b>, {{.Sys.Country}}</h1>
     </div>
 </div>
 <div style="margin-left:10px">
 <h1>Nåværende status:</h1>
-  <p>Temperatur: {{.Main.Temp}}&#8451;</p>
-  <p>Luftfuktighet : {{.Main.Humidity}}%</p>
+<p>Temperatur: {{.Main.Temp}}&#8451;</p>
+<p>Vindhastighet: {{.Wind.Speed}}m/s</p>
+<p>Luftfuktighet : {{.Main.Humidity}}%</p>
+<p>Atmostfærisk trykk {{.Main.Pressure}}hPa</p>
 </div>
 <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Kristiansand, Norge,
   &t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+<p>Koordinater: {{.Coord.Lat}}, {{.Coord.Lon}}</p>
   </iframe>
-<div>
-<div style="margin-left:10px">
-  <p>Koordinater: {{.Coord.Lat}}, {{.Coord.Lon}}</p>
 </body>
 </html>
